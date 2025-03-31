@@ -1,0 +1,47 @@
+/* ---------------------------------------*/
+/*  @media all and(min-width:481px)        *
+/  Estilos que irán en la hoja de estilos  *
+/  general del sitio (estilos-ecoba1.css). *
+/------------------------------------------*/
+form {
+  display:grid;
+    grid-template-columns:repeat(2 1fr);
+    grid-template-rows:20% 30% 15% 15%;
+    grid-auto-rows:minmax(100px,auto);
+    gap:20px;
+    padding:1ex;
+    margin:20px;
+    grid-template-areas:
+    "a b"
+    "c d"
+    "e e"
+    "f f"
+    ;
+    font-family:verdana,sans-serif;
+  }
+  fieldset.datos{
+    display:flex;
+    padding:1ex;
+    grid-area:a;
+  }
+  fieldset.general{
+    grid-area:b;
+  }
+  fieldset.q-test{
+    grid-area:c;
+  }
+  fieldset.bagaje{
+    grid-area:d;
+  }
+  fieldset.preferencia{
+    grid-area:e;
+  }
+  form>p{
+    grid-column:1/3;
+    grid-row:4;
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    padding:4ex;
+    background-color:rgb(210, 240, 220);
+  }

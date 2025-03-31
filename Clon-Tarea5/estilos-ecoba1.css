@@ -1,0 +1,82 @@
+body{
+  margin-right:20px;
+}
+.prueba-nivel{
+  font-family:verdana,sans-serif;
+}
+header{
+  display:flex;
+  text-align:center;
+  width:350px;
+  font-size:2rem;
+  color:blue;
+  margin-top:5px;
+  padding:1ex;
+  background-color:rgb(235, 219, 219);
+}
+picture>img{
+  max-width:100%;
+}
+form{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:(15% 20% 20% 20% 15% 10%);
+  gap:10px;
+}
+.datos{
+  input{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+}
+.preferencia{
+  grid-column:2/3;
+  grid-row:1;
+}
+.preferencia li{
+  list-style:none;
+}
+.q-test li{
+  list-style:none;
+}
+#procedencia{
+  display:block;
+  width:100%;
+}
+.bagaje{
+  grid-column:2/3;
+  grid-row:2/3;
+}
+form>p{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:350px;
+  height:70%;
+  gap:20px;
+  padding:2ex;
+  background-color:rgb(235, 219, 219);
+}
+@media (max-width:480px){
+ .preferencia{
+  grid-column:1/2;
+  grid-row:2/3;
+  }
+  .q-test{
+  grid-column:1/2;
+  grid-row:3/4;
+  }
+  .bagaje{
+  grid-column:1/2;
+  grid-row:4/5;
+  }
+ .motivado{
+  grid-column:1/2;
+  grid-row:5/6;
+  }
+  form>p{
+  grid-column:1/2;
+  grid-row:6/7;
+  }
+}

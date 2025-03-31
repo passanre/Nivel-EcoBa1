@@ -1,0 +1,44 @@
+body{
+  margin-right:20px;
+}
+header{
+  width:400px;
+  font-size:2rem;
+  color:rgb(16, 3, 43);
+  text-align:center;
+  margin-top:5px;
+  padding:1ex;
+  background-color:rgb(235, 219, 219);
+}
+picture>img
+{
+  max-width:100%;
+  object-fit:fill;
+}
+form>p{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:2ex;
+}
+label,li,input{
+  display:block;
+  list-style:none;
+}
+.datos{
+  width:90%;
+  padding:1ex;}
+.bagaje{
+  input,label{
+  display:inline-block;
+}}
+.preferencia{
+  input,label{
+  display:inline-block;
+}}
+.q-test input{
+  width:100%;
+}
+#procedencia{
+  display:block;
+  width:100%;}
